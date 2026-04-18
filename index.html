@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>PHOTOBLU</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="landing-page">
+
+  <div class="landing-glass">
+
+    <header class="landing-header">
+      <h1>PHOTOBLU</h1>
+      <p>Capture the moment. Create your photostrip.</p>
+      <p>This is the photo booth we set up to create more memories</p>
+    </header>
+
+    <main class="landing-content">
+      <img src="assets/sample-strip.png" class="sample" alt="Sample Result">
+
+      <button class="start-btn" onclick="startBooth()">
+        LET’S UNLOCK OUR NEW MEMORIES
+      </button>
+    </main>
+
+  </div>
+
+  <script>
+    function startBooth() {
+      window.location.href = 'booth.html';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>PHOTOBLU </title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div id="flash"></div>
+<body class="camera-page">
+
+  <div class="camera-wrapper">
+
+    <!-- FRAME SELECTOR -->
+    <div class="frame-selector">
+      <img src="assets/frame1.PNG" class="frame-thumb active" data-frame="frame1.PNG">
+      <img src="assets/frame2.PNG" class="frame-thumb" data-frame="frame2.PNG">
+      <img src="assets/frame3.PNG" class="frame-thumb" data-frame="frame3.PNG">
+      <img src="assets/frame4.PNG" class="frame-thumb" data-frame="frame4.PNG">
+      <img src="assets/frame5.PNG" class="frame-thumb" data-frame="frame5.PNG">
+    </div>
+
+    <!-- CAMERA -->
+    <div class="camera-card">
+      <video id="video" autoplay playsinline></video>
+    </div>
+    <div class="photo-previews" id="photoPreviews"></div>
+    <!-- CONTROLS -->
+    <div class="booth-controls">
+       <button id="startMulti" class="primary">Multi Shot</button>
+
+       <button id="takeSingle" class="secondary">Take Photo</button>
+       <button id="retakeLast" class="secondary">Retake</button>
+
+       <button id="downloadBtn" class="secondary">Download</button>
+    </div>
+
+    <!-- RESULT -->
+    <canvas id="stripCanvas"></canvas>
+
+  </div>
+
+  <div id="countdown" class="countdown hidden">3</div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
